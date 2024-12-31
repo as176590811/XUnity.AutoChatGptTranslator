@@ -1,0 +1,6 @@
+﻿{
+  "openaiApiKey": "your-openai-api-key",
+  "sourceLanguage": "en",
+  "targetLanguage": "es",
+  "prompt":  "",
+}
