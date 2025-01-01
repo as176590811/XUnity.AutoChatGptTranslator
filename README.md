@@ -13,7 +13,7 @@ Translator that uses ChatGPT and a custom prompt to translate the game in parall
 		[ChatGPT]
 		APIKey=
 		Model=gpt-4o
-		Prompt=Translate Simplified Chinese to clear, direct English, ensuring the tone aligns with the Wuxia genre. Preserve the original context, structure, and meaning. Retain special characters and codes (e.g., HTML) as is. Do not add words or prompts not in the original. Adjust phrasing only for readability without changing intent. Ensure Propercase for output. Use Pinyin for Chinese names.
+		Prompt=Translate Simplified Chinese to clear, direct English, ensuring the tone aligns with the Wuxia genre. Preserve the original context, structure, and meaning. Retain special characters and codes (e.g., HTML) as is. Do not add words or prompts not in the original. Adjust phrasing only for readability without changing intent. Use Pinyin only for Chinese names and key terms where appropriate, ensuring the rest of the text is in English. Allow natural variation in capitalization for names, titles, and stylistic elements.
 		```
 	- Add your own APIKey from [OpenAI](https://platform.openai.com/chat-completions) please note this is not free.
 	- Change the translator section at the top of the file to use the translator:
