@@ -23,6 +23,10 @@ internal class ChatGptTranslatorEndpoint : HttpEndpoint
         _model = context.GetOrCreateSetting("ChatGPT", "Model", "gpt-4o");
         _prompt = context.GetOrCreateSetting("ChatGPT", "Prompt", "");
 
+        // Remove artificial delays
+        context.SetTranslationDelay(0.1f);
+        context.DisableSpamChecks();
+
         if (string.IsNullOrEmpty(_apiKey))
             throw new Exception("The ChatGPT endpoint requires an API key which has not been provided.");
     }
