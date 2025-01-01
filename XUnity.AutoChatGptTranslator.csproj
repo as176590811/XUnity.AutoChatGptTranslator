@@ -7,10 +7,6 @@
 		<LangVersion>latest</LangVersion>
 		<GameDir>C:\Program Files (x86)\Steam\steamapps\common\The road of Jianghu\daojianjianghulu_Data\Managed\Translators\</GameDir>
 	</PropertyGroup>
-
-	<ItemGroup>
-	  <None Include="Preoptimised.cs" />
-	</ItemGroup>
 	
 	<ItemGroup>
 		<Reference Include="XUnity.AutoTranslator.Plugin.Core">
@@ -23,10 +19,6 @@
 			<HintPath>packages\XUnity.Common.dll</HintPath>
 		</Reference>
 	</ItemGroup>
-
-	<!--<Target Name="PostBuild" AfterTargets="PostBuildEvent">
-		<Exec Command="XCOPY /Y /I &quot;$(TargetDir)$(TargetName)$(TargetExt)&quot; &quot;$(GameDir)&quot;" />
-	</Target>-->
 
 	<ItemGroup>
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
