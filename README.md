@@ -1,3 +1,7 @@
+# Obsolete now - kept for legacy reasons
+
+Replaced by [XUnity.AutoTranslate.LlmTranslators](https://github.com/joshfreitas1984/XUnity.AutoTranslate.LlmTranslators).
+
 # XUnity.AutoChatGptTranslator
 
 Translator that uses ChatGPT and a custom prompt to translate the game in parallel.
