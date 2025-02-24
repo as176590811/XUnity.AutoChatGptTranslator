@@ -10,7 +10,7 @@ internal class ChatGptTranslatorEndpoint : HttpEndpoint
     private string? _apiKey;
     private string? _model;
     private string? _prompt;
-    private const string _url = "https://api.openai.com/v1/chat/completions";
+    private string? _url;
 
     public override string Id => "ChatGPTTranslate";
     public override string FriendlyName => "ChatGPT Translate";
@@ -22,7 +22,8 @@ internal class ChatGptTranslatorEndpoint : HttpEndpoint
         _apiKey = context.GetOrCreateSetting("ChatGPT", "APIKey", "");
         _model = context.GetOrCreateSetting("ChatGPT", "Model", "gpt-4o");
         _prompt = context.GetOrCreateSetting("ChatGPT", "Prompt", "");
-
+        _url = context.GetOrCreateSetting("ChatGPT", "URL", "https://api.openai.com/v1/chat/completions");
+        
         // Remove artificial delays
         context.SetTranslationDelay(0.1f);
         context.DisableSpamChecks();
