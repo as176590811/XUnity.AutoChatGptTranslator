@@ -18,7 +18,8 @@ Translator that uses ChatGPT and a custom prompt to translate the game in parall
 		APIKey=
 		Model=gpt-4o
 		Prompt=Translate Simplified Chinese to clear, concise English in a Wuxia tone. Keep context, meaning, and structure intact. Leave special characters (e.g., HTML) unchanged. Use Pinyin for Chinese names and terms; write everything else in English. Adjust for readability without changing intent. Maintain natural capitalization for names and titles.
-		```
+		URL=https://api.openai.com/v1/chat/completions
+      ```
 	- Add your own APIKey from [OpenAI](https://platform.openai.com/chat-completions) please note this is not free.
 	- Change the translator section at the top of the file to use the translator:
 	- ```
